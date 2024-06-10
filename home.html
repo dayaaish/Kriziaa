@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ノウゼン<</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+    <img src="assets/ulbi.png">
+    <div id="container">
+        <div id="blocked">
+            <div id="logo">木漏れ日!!</div>
+            <div id="dial">
+                <table>
+                    <tr>
+                        <td>works</td>
+                        <td arr>»</td>
+                        <td lnk><a target="_blank" href="https://marshallyin.com">myin</a></td>
+                        <td lnk><a target="_blank" href="http://github.com">git</a></td>
+                        <td lnk><a target="_blank" href="http://notion.so">notion</a></td>
+                        <td lnk><a target="_blank" href="http://dribbble">dribbb</a></td>
+                    </tr>
+                    <tr>
+                        <td>smirk^^</td>
+                        <td arr>»</td>
+                        <td lnk><a target="_blank" href="https://wallhaven.cc/">wallhvn</a></td>
+                        <td lnk><a target="_blank" href="https://fitgirl-repacks.site/">fitgirl</a></td>
+                        <td lnk><a target="_blank" href="https://gamdie.com">gmdie</a></td>
+                        <td lnk><a target="_blank" href="https://gamedrive.org">gmdrv</a></td>
+                    </tr>
+                    <tr>
+                        <td>dont ask</td>
+                        <td arr>»</td>
+                        <td lnk><a target="_blank" href="nyaa.si">nyaa</a></td>
+                        <td lnk><a target="_blank" href="https://anilist.co/home">anilist</a></td>
+                        <td lnk><a target="_blank" href="https://hianime.to/">h!</a></td>
+                        <td lnk><a target="_blank" href="http://youtube.com">yt</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="search">
+                <form method="get" action="http://www.google.com/search">
+                    <input name="q" type="text" placeholder="Google" />
+                </form>
+            </div>
+        </div>
+<script type="text/javascript" src="assets/jquery.min.js"></script>
+<script type="text/javascript">
+var cl = function() {
+	var ca = ["#a66959", "#769070", "#ac8d6e", "#607a86", "#8a757e", "#60867f", "#c4c4b5"];
+	$("td[lnk]").each(function(){
+		var r = ca[~~(Math.random() * ca.length)];
+		$(this).css("background-color", r);
+	});
+};
+var rl = function(){
+	var l = $('#logo');
+	var cr = l.text().split("");
+	l.empty();
+	$.each(cr, function (i, e) {
+	    l.append('<span>' + e + '</span>');
+	});
+}
+$(function(){
+	var a = setInterval(cl,200);
+	var b = rl();
+});
+</script>
+    <footer id="footer">made with ❤ by dayaaish
+    </footer>
+</body>
+
+</html>
